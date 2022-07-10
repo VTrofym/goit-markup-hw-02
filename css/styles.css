@@ -3,12 +3,25 @@
 /* основной цвет фона #FFFFFF */
 /* вторичный цвет фона #F5F4FA */
 /* черный фон #2F303A */
+/* голубой фон #2196F3 */
 
 /* голубой #2196F3   */
 /* черный лого #000000 */
 /* черный не лого #212121 */
 /* черный для массива текста #757575 */
 /* белый #FFFFFF */
+
+:root {
+    --background-color-white: #FFFFFF;
+    --background-color-black: #2F303A;
+    --background-color-grey: #F5F4FA;
+    --background-color-blue: #2196F3;
+    --font-сolor-blue: #2196F3;
+    --font-сolor-black-logo: #000000;
+    --font-сolor-white: #FFFFFF;
+    --font-сolor-black-p: #757575;
+    --font-сolor-black-other: #212121;
+}
 
 /* * {
     margin: 0;
@@ -31,38 +44,40 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: inherit;
+}
+
 .button-main {
     background-color: var(--background-color-blue);
     color: var(--font-сolor-white);
-    position: absolute;
+
+    /* position: absolute; */
     width: 200px;
     height: 50px;
-    /* left: 700px;
-    top: 430px; */
+    left: 700px;
+    top: 430px;
+
     border-radius: 4px;
     border: 0;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
 }
 
 
 
 
-:root {
-    --background-color-white: #FFFFFF;
-    --background-color-black: #2F303A;
-    --background-color-grey: #F5F4FA;
-    --background-color-blue: #2196F3;
-    --font-сolor-blue: #2196F3;
-    --font-сolor-black-logo: #000000;
-    --font-сolor-white: #FFFFFF;
-    --font-сolor-black-p: #757575;
-    --font-сolor-black-other: #212121;
-}
+
 
 
 /* Header */
+
+.logo {
+    font-size: 26px;
+    line-height: 1.2;
+}
 
 .logo-blue {
     color: var(--font-сolor-blue);
@@ -87,6 +102,12 @@ a {
     color: var(--font-сolor-blue);
 }
 
+.studiya, .portfolio, .contacts, .mail, .tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+}
+
 .mail-tel .link {
     color: var(--font-сolor-black-other);
 }
@@ -96,28 +117,69 @@ a {
     color: var(--font-сolor-blue);
 }
 
+
 /* MAIN */
 
 /* Блок Заголовок */
 .block-title {
     background-color: var(--background-color-black);
 }
+
 .h1 {
     color: var(--font-сolor-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* акценты в работе */
-.text-h2-h3 {
+.title-s1 {
     color: var(--font-сolor-black-other);
 }
 
-.for-business {
+.p-s1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
 
+/* виды работ */
+
+.title-s2 {
+    color: var(--font-сolor-black-other);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* состав команды */
 .team {
     background-color: var(--background-color-grey);
+}
+
+.title-s3 {
+    color: var(--font-сolor-black-other);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.name-s3 {
+    color: var(--font-сolor-black-other);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    
+}
+
+.job-s3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 /* контакты поддержки */
@@ -129,14 +191,18 @@ a {
 
 .location {
     color: var(--font-сolor-white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .mail,
 .tel-nom {
     color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
-
-.
 
 
 
@@ -154,20 +220,20 @@ a {
 
 /* Стили для portfolio.html */
 
-.button-portfolio {
+/* .button-portfolio {
     background-color: var(--background-color-grey);
     color: var(--font-сolor-black-other);
-    /* position: absolute;
+    position: absolute;
     width: 200px;
     height: 50px;
-    /* left: 700px;
-    top: 430px; */
+    left: 700px;
+    top: 430px;
     border-radius: 4px;
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .button-portfolio-all:hover {
     color: var(--font-сolor-white);
@@ -200,6 +266,10 @@ a {
     height: 38px;
     left: 495px;
     top: 174px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .button-portfolio-websites {
@@ -208,6 +278,10 @@ a {
     height: 38px;
     left: 576px;
     top: 174px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .button-portfolio-apps {
@@ -216,6 +290,10 @@ a {
     height: 38px;
     left: 712px;
     top: 174px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .button-portfolio-design {
@@ -224,6 +302,10 @@ a {
     height: 38px;
     left: 865px;
     top: 174px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .button-portfolio-marketing {
@@ -232,8 +314,28 @@ a {
     height: 38px;
     left: 976px;
     top: 174px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 
 
+
+.title-img {
+    color: var(--font-сolor-black-other);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.p-portfolio {
+    color: var(--font-сolor-black-p);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+}
 
