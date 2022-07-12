@@ -23,17 +23,12 @@
     --font-сolor-black-other: #212121;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 
 body {
     background-color: #FFFFFF;
     color: #757575;
     font-family: Roboto, sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 ul {
@@ -46,24 +41,15 @@ a {
 
 button {
     font-family: inherit;
+    cursor: pointer;
 }
 
 .button-main {
     background-color: var(--background-color-blue);
     color: var(--font-сolor-white);
 
-    /* position: absolute; */
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
-
     border-radius: 4px;
     border: 0;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    text-align: center;
 }
 
 
@@ -130,8 +116,6 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 /* акценты в работе */
@@ -235,29 +219,19 @@ button {
     justify-content: center;
 } */
 
-.button-portfolio-all:hover {
-    color: var(--font-сolor-white);
-    background-color: var(--background-color-blue)
-}
-
-.button-portfolio-websites:hover {
-    color: var(--font-сolor-white);
-    background-color: var(--background-color-blue)
-}
-
-.button-portfolio-apps:hover {
-    color: var(--font-сolor-white);
-    background-color: var(--background-color-blue)
-}
-
-.button-portfolio-design:hover {
-    color: var(--font-сolor-white);
-    background-color: var(--background-color-blue)
-}
-
+.button-portfolio-all:hover,
+.button-portfolio-websites:hover,
+.button-portfolio-apps:hover,
+.button-portfolio-design:hover,
 .button-portfolio-marketing:hover {
     color: var(--font-сolor-white);
     background-color: var(--background-color-blue)
+}
+
+.button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .button-portfolio-all {
@@ -266,10 +240,6 @@ button {
     height: 38px;
     left: 495px;
     top: 174px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 .button-portfolio-websites {
@@ -278,10 +248,6 @@ button {
     height: 38px;
     left: 576px;
     top: 174px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 .button-portfolio-apps {
@@ -290,10 +256,6 @@ button {
     height: 38px;
     left: 712px;
     top: 174px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 .button-portfolio-design {
@@ -302,10 +264,6 @@ button {
     height: 38px;
     left: 865px;
     top: 174px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 .button-portfolio-marketing {
@@ -314,10 +272,6 @@ button {
     height: 38px;
     left: 976px;
     top: 174px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
 }
 
 
